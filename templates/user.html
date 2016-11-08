@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <h2>Your informations are:</h2>
+{% end %}
+
+{% block body %}
+    <ul class="uk-list uk-list-striped">
+        {% for one in users %}
+            <li>username:{{one[1]}}</li>
+            <li>password:{{one[2]}}</li>
+            <li>email:{{one[3]}}</li>
+        {% end %}
+    </ul>
+
+    <ul class="uk-slideshow">
+    	<li>
+        	<video width="" height="" autoplay loop muted controls>
+            	<source src="" type="">
+        	</video>
+    	</li>
+	</ul>
+{% end %}
