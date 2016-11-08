@@ -12,7 +12,9 @@ the url structure of website
 #reload(sys)
 from handlers.index import IndexHandler
 from handlers.user import UserHandler
+from handlers.remoteAPI import WeatherFutureRemoteAPIHandler
 url = [
 	(r'/', IndexHandler),
-	(r'/user', UserHandler)
+	(r'/user', UserHandler),
+	(r'/api/weather/future', WeatherFutureRemoteAPIHandler)
 ]

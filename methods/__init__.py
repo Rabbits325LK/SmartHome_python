@@ -1,3 +1,3 @@
-__all__ = ['db','readdb']
+__all__ = ['db','readdb','weather']
 #import db
 #import readdb
